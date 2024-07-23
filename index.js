@@ -28,6 +28,13 @@ function add_task_fun() {
       p.style.textDecorationLine = "line-through";
       p.style.color = "rgba(0,0,0,0.6)";
     })
+    section.addEventListener("click", () => {
+      button2.style.backgroundColor = "rgba(20, 45, 76, 0.5)";
+      button2.style.cursor = "none";
+      button2.innerText = "Competed";
+      p.style.textDecorationLine = "line-through";
+      p.style.color = "rgba(0,0,0,0.6)";
+    })
     listData.append(section)
     button1.addEventListener("click", (e) => {
       section.remove()
